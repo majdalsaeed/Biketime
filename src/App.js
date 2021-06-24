@@ -6,7 +6,7 @@ import Shop from './Components/Shop/Shop';
 import Marken from './Components/Marken/Marken';
 import Service from './Components/Service/Service';
 import Blog from './Components/Blog/Blog';
-
+import KundenKonto from './Components/KundenKonto/KundenKonto';
 function App() {
   return (
     <>
@@ -19,6 +19,7 @@ function App() {
             <Route path='./Marken' component={Marken} />
             <Route path='./Service' component={Service} />
             <Route path='./Blog' component={Blog} />
+            <Route path='./KundenKonto' component={KundenKonto} />
           </Switch>
         </Navbar>
       </Router>
