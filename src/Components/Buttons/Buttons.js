@@ -1,10 +1,12 @@
-import React from 'react';
-import './Buttons.css';
-import { Link } from 'react-router-dom';
 
-function Buttons() {
-    return (
-        <h1>I will fix it</h1>
-    );
+import React from 'react';
+import '../Buttons/Buttons.css';
+
+function Buttons () {
+  return(
+    <div className="Buttons-page">
+      <h1>this is a button</h1>
+    </div>
+  )
 }
-export default Buttons();
+export default Buttons;

@@ -1,9 +1,9 @@
-import './Navbar.css';
-import React, { useState, useEffect } from 'react';
-import { Buttons } from '../Buttons/Buttons';
+import React from 'react';
+import '../Navbar/Navbar.css';
 import { Link } from 'react-router-dom';
 
 function Navbar() {
+  
   return (
     <>
       <nav className='navbar'>
@@ -56,4 +56,4 @@ function Navbar() {
     </>
         );
 }
- export default Navbar;
+export default Navbar;

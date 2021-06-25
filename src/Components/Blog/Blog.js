@@ -3,7 +3,10 @@ import '../Blog/Blog.css';
 
 function Blog() {
     return (
-        <h1 className="blog">this is Marken page</h1>
+        <div className="Blog-page">
+            <h1 >this is Blog page</h1>
+        </div>
+        
     );
 }
 export default Blog;

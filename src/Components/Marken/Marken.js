@@ -3,7 +3,10 @@ import '../Marken/Marken.css';
 
 function Marken() {
     return (
-        <h1 className="marken">this is Marken page</h1>
+        <div className="Marken-page">
+            <h1 >this is Marken page</h1>
+        </div>
+
     );
 }
 export default Marken;
