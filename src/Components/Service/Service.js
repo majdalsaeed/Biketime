@@ -3,7 +3,9 @@ import './Service.css';
 
 function Service() {
     return (
-        <h1 className="service">this is Service page</h1>
+        <div className="Service-page">
+        <h1 >this is Service page</h1>
+    </div>
     );
 }
 export default Service;

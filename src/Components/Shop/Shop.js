@@ -3,7 +3,10 @@ import '../Shop/Shop.css';
 
 function Shop() {
     return (
-        <h1 className="shop">this is Shop page</h1>
+        <div className="Shop-page">
+            <h1 >this is Shop page</h1>
+        </div>
+        
     );
 }
 export default Shop;

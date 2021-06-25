@@ -3,7 +3,10 @@ import '../KundenKonto/KundenKonto.css';
 
 function KundenKonto() {
     return (
-        <h1 className="kundenkonto">this is kundenkonto page</h1>
+        <div className="KundenKonto-page">
+         <h1 >this is kundenkonto page</h1>
+        </div>
+       
     );
 }
 export default KundenKonto;
