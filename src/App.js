@@ -10,18 +10,16 @@ import KundenKonto from './Components/KundenKonto/KundenKonto';
 function App() {
   return (
     <>
-      <Router>
-        <Navbar>
+      <Router>  
           <Switch>
-            <Route path='./' exact component={Home} />
-            <Route path='./Home' component={Home} />
-            <Route path='./Shop' component={Shop} />
-            <Route path='./Marken' component={Marken} />
-            <Route path='./Service' component={Service} />
-            <Route path='./Blog' component={Blog} />
-            <Route path='./KundenKonto' component={KundenKonto} />
+            <Route path='/Home' component={Home} />
+            <Route path='/Shop' component={Shop} />
+            <Route path='/Marken' component={Marken} />
+            <Route path='/Service' component={Service} />
+            <Route path='/Blog' component={Blog} />
+            <Route path='/KundenKonto' component={KundenKonto}/>
+            <Route path='/' exact component={Home} />
           </Switch>
-        </Navbar>
       </Router>
     </>
   );

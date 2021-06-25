@@ -47,7 +47,7 @@ function Navbar() {
                 <li className='nav-item'>
                   <Link
                     to='/kundenkonto'>
-                    marken
+                    Kundenkonto
                   </Link>
                 </li>
           </ul>
