@@ -1,27 +1,31 @@
+import React from 'react';
 import './App.css';
 import Navbar from './Components/Navbar/Navbar';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Home from './Components/Home/Home';
 import Shop from './Components/Shop/Shop';
-import Marken from './Components/Marken/Marken';
 import Service from './Components/Service/Service';
+import Marken from './Components/Marken/Marken';
 import Blog from './Components/Blog/Blog';
 import KundenKonto from './Components/KundenKonto/KundenKonto';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+
 function App() {
   return (
-    <>
-      <Router>  
-          <Switch>
-            <Route path='/Home' component={Home} />
-            <Route path='/Shop' component={Shop} />
-            <Route path='/Marken' component={Marken} />
-            <Route path='/Service' component={Service} />
-            <Route path='/Blog' component={Blog} />
-            <Route path='/KundenKonto' component={KundenKonto}/>
-            <Route path='/' exact component={Home} />
-          </Switch>
-      </Router>
-    </>
+    <Router>
+      <div className="App">
+        < Navbar />
+        <Switch>
+          <Route path='/' exact component={Home} />
+          <Route path='/shop' exact component={Shop} />
+          <Route path='/service' exact component={Service} />
+          <Route path='/marken' exact component={Marken} />
+          <Route path='/blog' exact component={Blog} />
+          <Route path='/kundenKonto' exact component={KundenKonto} />
+        </Switch>
+
+      </div>
+    </Router>
+
   );
 }
 
