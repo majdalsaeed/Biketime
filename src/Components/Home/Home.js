@@ -1,12 +1,14 @@
 import React from 'react';
 import '../Home/Home.css';
+import Cards from '../Cards/Cards';
+import Footer from '../Footer/Footer';
 
 function Home() {
     return (
-        <div className="Home-page">
-            <h1 >this is home page</h1>
-        </div>
-
+        <>
+        <Cards />
+        <Footer />
+        </>
     );
 }
 export default Home;
