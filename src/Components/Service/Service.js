@@ -24,8 +24,8 @@ function Service() {
   
     return (
       <div className="Service-page">
-        <div className="bike-h2">
-          <h2>Are you strugling with your Bike then find the part you need to continou your Journey</h2>
+        <div className="service-h1">
+          <h2>Bike Time repair workshop</h2>
         </div>
         <form className="contact">
           <input type="text" placeholder="Your Name" required className="in" />
@@ -80,7 +80,7 @@ function Service() {
             minLength="11"
           ></textarea>
           <button type="submit" className="btn">
-            Send Message
+            Send Request
           </button>
           {/*If the entered email is valid, the message will be blue, otherwise it will be red. */}
           <div className={`message ${isValid ? "success" : "error"}`}>
