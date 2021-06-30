@@ -1,4 +1,4 @@
-import React, { createContext, useState } from "react";
+import React, { createContext, useState, useEffect } from "react";
 import items from "./data";
 
 export const DataContext = createContext();
@@ -20,6 +20,16 @@ export const DataProvider = (props) => {
       alert("The product has been added to cart.");
     }
   };
+
+  useEffect(() => {
+    const dataCart = JSON.parse(localStorage.getItem("dataCart"));
+    if (dataCart) setCart(dataCart);
+  }, []);
+
+  useEffect(() => {
+    if (!cart.length) return;
+    localStorage.setItem("dataCart", JSON.stringify(cart));
+  }, [cart]);
 
   const value = {
     products: [products, setProducts],
