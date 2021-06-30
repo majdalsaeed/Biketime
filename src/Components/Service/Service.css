@@ -36,6 +36,15 @@ body{
      height: auto;
      width: 100%;
  }
+ .bike-h2{
+    margin-top: 50px;
+    margin-right: 480px;
+    margin-bottom: 50px;
+    margin-left: 480px;
+    background-color: antiquewhite;
+ }
+
+
  .bike-h3{
      color: green;
  }

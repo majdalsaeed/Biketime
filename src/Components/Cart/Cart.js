@@ -1,11 +1,14 @@
-import './Cart.css';
-import React from 'react';
+import React from "react";
+import { DataProvider } from "../Shop/DataProvider";
+import Basket from "../Shop/Basket";
+import "./Cart.css";
+
 function Cart() {
-    return(
-        <div className="cart">
-             <h1>Cart</h1>
-        </div>
-       
-    )
+  return (
+    <DataProvider>
+      <Basket />
+    </DataProvider>
+  );
 }
+
 export default Cart;

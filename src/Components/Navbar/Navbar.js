@@ -46,12 +46,6 @@ function Navbar() {
         <NavLink className="navLink" to="/service" >
           <li>Service</li>
         </NavLink>
-        <NavLink className="navLink" to="/marken">
-          <li>Marken</li>
-        </NavLink>
-        <NavLink className="navLink" to="/blog">
-          <li>Blog</li>
-        </NavLink>
         <NavLink className="navLink" to="/kundenKonto">
           <li>KundenKonto</li>
         </NavLink>

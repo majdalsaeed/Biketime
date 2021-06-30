@@ -5,8 +5,7 @@ import '../Carousel/Carousel.css';
 function Carousel() {
   return (
     <div className='carousel-container'>
-      <video src='/videos/video-1.mp4' autoPlay loop muted />
-      <h1>ADVENTURE AWAITS</h1>
+      <h1>Riding2RIDE AWAITS YOU</h1>
       <p>What are you waiting for?</p>
       <div className='carousel-btns'>
         <Button
@@ -14,7 +13,7 @@ function Carousel() {
           buttonStyle='btn--outline'
           buttonSize='btn--large'
         >
-          GET STARTED
+          Free Trial
         </Button>
         <Button
           className='btns'

@@ -1,12 +1,14 @@
-import React from 'react';
-import '../Shop/Shop.css';
+import React from "react";
+import { DataProvider } from "./DataProvider";
+import Products from "./Products";
+import "./Shop.css";
 
 function Shop() {
-    return (
-        <div className="Shop-page">
-            <h1 >this is Shop page</h1>
-        </div>
-        
-    );
+  return (
+    <DataProvider>
+      <Products />
+    </DataProvider>
+  );
 }
+
 export default Shop;
