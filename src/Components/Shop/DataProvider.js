@@ -40,4 +40,8 @@ export const DataProvider = (props) => {
   return (
     <DataContext.Provider value={value}>{props.children}</DataContext.Provider>
   );
+<<<<<<< HEAD
 };
+=======
+};
+>>>>>>> 60a9342aa86ac605f283cc5b665bf0ec93e787a4

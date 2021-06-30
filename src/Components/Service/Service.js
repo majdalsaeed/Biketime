@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Footer from "../Footer/Footer";
 import './Service.css';
 import bike1 from "./images/Bike.jpeg";
 
@@ -23,8 +24,9 @@ function Service() {
   
     return (
       <div className="Service-page">
-        <h1>this is Service page</h1>
-        <h2 className="bike-h2">here you can find help if you are having issues with your Bike, you can select the parts you are having issues with and contact us and one of our team members will be glad to help you </h2>
+        <div className="bike-h2">
+          <h2>Are you strugling with your Bike then find the part you need to continou your Journey</h2>
+        </div>
         <form className="contact">
           <input type="text" placeholder="Your Name" required className="in" />
           <input
@@ -34,7 +36,7 @@ function Service() {
             className="in"
             onChange={validateEmail}
           />
-          <label for="bikes">Help for:</label>
+          <label for="bikes">Assisting you with:</label>
           <h3 className="bike-h3">please take a look at the bike example below and locate where the repairing is needed</h3>
           <select id="bikes" name="bikes" className="options">
             <option value="Frame">Frame</option>
@@ -85,7 +87,9 @@ function Service() {
             {message}
           </div>
         </form>
+      <Footer/>
       </div>
+
     );
   }
   export default Service;
