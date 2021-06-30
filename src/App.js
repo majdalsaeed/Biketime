@@ -7,6 +7,7 @@ import Service from './Components/Service/Service';
 import Marken from './Components/Marken/Marken';
 import Blog from './Components/Blog/Blog';
 import KundenKonto from './Components/KundenKonto/KundenKonto';
+import Cart from './Components/Cart/Cart';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
           <Route path='/marken' exact component={Marken} />
           <Route path='/blog' exact component={Blog} />
           <Route path='/kundenKonto' exact component={KundenKonto} />
+          <Route path='/cart' exact component={Cart} />
         </Switch>
 
       </div>
